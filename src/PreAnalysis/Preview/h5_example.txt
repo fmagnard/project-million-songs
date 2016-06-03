@@ -1,0 +1,54 @@
+analysis_sample_rate: 22050
+artist_7digitalid: 165270
+artist_familiarity: 0.581793765845
+artist_hotttnesss: 0.401997543364
+artist_id: b'ARD7TVE1187B99BFB1'
+artist_latitude: nan
+artist_location: b'California - LA'
+artist_longitude: nan
+artist_mbid: b'e77e51a5-4761-45b3-9847-2051f811e366'
+artist_mbtags: shape = (0,)
+artist_mbtags_count: shape = (0,)
+artist_name: b'Casual'
+artist_playmeid: 4479
+artist_terms: shape = (37,)
+artist_terms_freq: shape = (37,)
+artist_terms_weight: shape = (37,)
+audio_md5: b'a222795e07cd65b7a530f1346f520649'
+bars_confidence: shape = (83,)
+bars_start: shape = (83,)
+beats_confidence: shape = (344,)
+beats_start: shape = (344,)
+danceability: 0.0
+duration: 218.93179
+end_of_fade_in: 0.247
+energy: 0.0
+key: 1
+key_confidence: 0.736
+loudness: -11.197
+mode: 0
+mode_confidence: 0.636
+release: b'Fear Itself'
+release_7digitalid: 300848
+sections_confidence: shape = (10,)
+sections_start: shape = (10,)
+segments_confidence: shape = (971,)
+segments_loudness_max: shape = (971,)
+segments_loudness_max_time: shape = (971,)
+segments_loudness_start: shape = (971,)
+segments_pitches: shape = (971, 12)
+segments_start: shape = (971,)
+segments_timbre: shape = (971, 12)
+similar_artists: shape = (100,)
+song_hotttnesss: 0.602119989906
+song_id: b'SOMZWCG12A8C13C480'
+start_of_fade_out: 218.932
+tatums_confidence: shape = (688,)
+tatums_start: shape = (688,)
+tempo: 92.198
+time_signature: 4
+time_signature_confidence: 0.778
+title: b"I Didn't Mean To"
+track_7digitalid: 3401791
+track_id: b'TRAAAAW128F429D538'
+year: 0

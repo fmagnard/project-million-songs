@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CSE6242 - Team 17</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-75527217-2', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/GT_Logo.png" alt="" /></span>
+							<h1 id="title">CSE 6242</h1>
+							<p>Team 17</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#projectDescription" id="project-link" class="skel-layers-ignoreHref"><span class="icon fa-graduation-cap">The Project</span></a></li>
+								<li><a href="#projectDataset" id="dataset-link" class="skel-layers-ignoreHref"><span class="icon fa-database">Dataset</span></a></li>
+								<li><a href="#d3graph6" id="d3graph6-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Statistics</span></a></li>
+								<li><a href="#d3graph5" id="d3graph5-link" class="skel-layers-ignoreHref"><span class="icon fa-area-chart">Genre Timeline</span></a></li>
+								<li><a href="#d3graph4" id="d3graph4-link" class="skel-layers-ignoreHref"><span class="icon fa-area-chart">Deeper analysis</span></a></li>
+								<li><a href="#references" id="references-link" class="skel-layers-ignoreHref"><span class="icon fa-th">References</span></a></li>
+								<li><a href="#conclusion" id="conclusion-link" class="skel-layers-ignoreHref"><span class="icon fa-check-square-o">Conclusion</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! We are <strong>Team 17</strong>, from the <a href="http://poloclub.gatech.edu">CSE-6242</a> class<br/>
+									and this website is our project report.</h2>
+								<p>Auguste Byiringiro, Gireg Miorcec de Kerdanet<br />
+									Mathieu Lapeyre, Flore Magnard</p>
+							</header>
+
+							<footer>
+								<a href="#projectDescription" class="button scrolly">Start</a>
+							</footer>
+
+						</div>
+					</section>
+				
+				<!-- The project -->
+					<section id="projectDescription" class="three">
+						<div class="container">
+
+							<header>
+								<h2>The Project</h2>
+							</header>
+
+							<p>Do music tendencies reflect historical events ? This is the 
+								question we would like to answer ! Our goal is to analyse 
+								different music features across time in order to detect sharp 
+								variations reflecting some major historical events and eventually 
+								visualize them. Visualisation of historical events thanks to the 
+								evolution of music features is an innovative approach. We would 
+								like to focus on the 20th century in the USA. Once this is achieved 
+								we could expand our visualisation to all English­speaking countries. 
+								Another improvement would be to add music samples to illustrate the visualization.</p>
+							<p>So let's see what's going on here !</p>
+
+						</div>
+					</section>
+					
+				<!-- The dataset -->
+					<section id="projectDataset" class="two">
+						<div class="container">
+
+							<header>
+								<h2>The Dataset</h2>
+							</header>
+
+							<p>To answer this problem we need a huge database with a lot of song and also many additional information for a given track.</p>
+							<p>The Million Song Dataset provides us the main information for one million song:</br>
+							<li>1,000,000 tracks</li>
+							<li>43,943 artists with at least one term</li>
+							<li>54 fields per track</li>
+							<li>2,201,916 asymmetric similarity relationships</li>
+							<li>273 GB of data </li>
+							<li>515,576 dated tracks starting from 1922</li>  
+							<li>44,745 unique artists </li>
+							<li>18,196 cover songs identified</li> 
+							<li>7,643 tags </li>
+							<li>2,321 unique musicbrainz tags</li>
+							</p>
+							<p>To fulfill the dataset, we also extract additional data from the musiXmatch dataset (237,662 lyrics) and additional tags for the classification were provided by the lastfm dataset</p>
+							<p>Date is the key for an historical analysis. The most data we get, the better it is ! Therefore, we also used the spotify API which allow us to get additional date for 13% of the track</p>
+							
+							<div id="d3div0" class="d3"></div>
+
+						</div>
+					</section>
+					
+				<!-- Graph6 -->
+					<section id="d3graph6" class="two">
+						<div class="container">
+							
+							<header>
+								<h2>Features statistics</h2>
+							</header>
+							
+							<p>Let's now take a look at these features in a much more appealing way. Play with the graph to discover the repartition of our data across the time !</p>
+							
+							<div id="graph6label"><b>Select feature:</b></div>
+							  <select name="graph6feature" id="graph6feature">
+							  		<option value ="duration">duration</option>
+							        <option value ="artist_familiarity">artist_familiarity</option>
+							        <option value ="artist_hotness">artist_hotness</option>
+							        <option value ="loudness">loudness</option>
+							        <option value ="tempo">tempo</option>
+							  </select>
+							
+							<div id="d3div6" class="d3"></div>
+						</div>
+					</section>
+					
+				<!-- Graph3 -->
+					<section id="d3graph3" class="two">
+						<div class="container">
+							
+							<header>
+								<h2>Features scatterplot</h2>
+							</header>
+							
+							<p>Wow this is incredible ! An interactive scatterplot. Here you can view the music features
+								we had to analyse the history. But there is so much
+								more to discover !</p>
+								
+							<div id="graph3label"><b>x-Axis:</b></div>
+							  <select name="graph3xAX" id="graph3graph3xAXs">
+							  		<option value="year">year</option>
+							        <option value="duration">duration</option>
+							        <option value="artist_familiarity">artist_familiarity</option>
+							        <option value="artist_hotness">artist_hotness</option>
+							  </select>
+							
+							<div id="graph3graph3label2"><b>y-Axis:</b></div>
+							  <select name="graph3yAX" id="graph3graph3yAXs">
+							        <option value="duration">duration</option>
+							        <option value="artist_familiarity">artist_familiarity</option>
+							        <option value="artist_hotness">artist_hotness</option>
+							        <option value="year">year</option>
+							  </select>
+							
+							<div id="d3div3" class="d3"></div>
+						</div>
+					</section>
+					
+				<!-- Graph5 -->
+					<section id="d3graph5" class="two">
+						<div class="container">
+							
+							<header>
+								<h2>Genres</h2>
+							</header>
+							
+							<p>Now that you have understood our dataset, it's time for analisis. Let's start with the music genre !</p>
+							
+							<div id="d3div5" class="d3"></div>
+						</div>
+					</section>
+					
+				<!-- Graph4: score pos neg-->
+					<section id="d3graph4" class="two">
+						<div class="container">
+							
+							<header>
+								<h2>Positive, negative and swear words distribution</h2>
+							</header>
+							
+							<p>This graph shows the evolution of positive, negative, anger, anxiety and swear words in the lyrics across the time. Isn't it awesome!</p>
+							
+							<div id="d3div4" class="d3"></div>
+						</div>
+					</section>
+					
+				<!-- Graph1: score emotion-->
+					<section id="d3graph1" class="three">
+						<div class="container">
+							
+							<header>
+								<h2>Emotions evolution</h2>
+							</header>
+							
+							<p>Emotions transmitted in lyrics evolve across the time. 4 different emotions are available: happy, sad, angry and relaxed</p>
+							
+							<div id="d3div1" class="d3"></div>
+						</div>
+					</section>
+					
+				<!-- Graph2: thematic-->
+					<section id="d3graph2" class="two">
+						<div class="container">
+							
+							<header>
+								<h2>Lexical fields</h2>
+							</header>
+							
+							<p>Last but not least, we focus on the evolution of the lexical fields used in lyrics across time.</p>
+							
+							<div id="d3div2" class="d3"></div>
+						</div>
+					</section>
+
+				<!-- References -->
+					<section id="references" class="four">
+						<div class="container">
+
+							<header>
+								<h2>References</h2>
+							</header>
+
+							<p>Here is gathered a bunch of references used to answer the problem</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="images/image1.png" class="image fit"><img src="images/image1.png"/></a>
+										<header>
+											<h3>Fields available for each file of the Million Song dataset</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="images/image2.png" class="image fit"><img src="images/image2.png" alt="" /></a>
+										<header>
+											<h3>Cluster of mood tags</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a href="images/image3.png" class="image fit"><img src="images/image3.png" alt="" /></a>
+										<header>
+											<h3>Artist location</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="images/image4.png" class="image fit"><img src="images/image4.png" alt="" /></a>
+										<header>
+											<h3>Method for Music Mood classification: Supervised learning</h3>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item">
+										<a href="images/image5.png" class="image fit"><img src="images/image5.png" alt="" /></a>
+										<header>
+											<h3>Recipe for a good visualization</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="images/image6.png" class="image fit"><img src="images/image6.png" alt="" /></a>
+										<header>
+											<h3>Tiki-Toki musical timeline</h3>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- Conclusion -->
+					<section id="conclusion" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Conclusion</h2>
+							</header>
+
+							<p>To evaluate our result we created a survey which compares our website to <a href="http://www.tiki-toki.com/timeline/entry/26427/THE-HISTORY-OF-MUSIC/#vars!date=1953-09-10_04:30:48!">Tiki-Toki website</a>. 20 people completed this survey. The results are shown below.</p>
+
+							<a href="images/image7.png" class="image centered"><img src="images/image7.png" alt="" /></a>
+
+							
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; CSE-6242 Team17. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/d3.v3.min.js"></script>
+			<script src="assets/js/d3.tip.v0.6.3.js"></script>
+			<script src="assets/js/d3graph0.js"></script>
+			<script src="assets/js/d3graph1.js"></script>
+			<script src="assets/js/d3graph2.js"></script>
+			<script src="assets/js/d3graph3.js"></script>
+			<script src="assets/js/d3graph4.js"></script>
+			<script src="assets/js/d3graph5.js"></script>
+			<script src="assets/js/d3graph6.js"></script>
+
+	</body>
+</html>

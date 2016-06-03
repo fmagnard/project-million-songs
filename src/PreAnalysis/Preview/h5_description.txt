@@ -1,0 +1,196 @@
+File(filename=MillionSongSubset/data/A/A/A/TRAAAAW128F429D538.h5, title='H5 Song File', mode='r', root_uep='/', filters=Filters(complevel=1, complib='zlib', shuffle=True, fletcher32=False, least_significant_digit=None))
+/ (RootGroup) 'H5 Song File'
+/analysis (Group) 'Echo Nest analysis of the song'
+/analysis/bars_confidence (EArray(83,), shuffle, zlib(1)) 'array of confidence of bars'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/bars_start (EArray(83,), shuffle, zlib(1)) 'array of start times of bars'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/beats_confidence (EArray(344,), shuffle, zlib(1)) 'array of confidence of sections'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/beats_start (EArray(344,), shuffle, zlib(1)) 'array of start times of beats'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/sections_confidence (EArray(10,), shuffle, zlib(1)) 'array of confidence of sections'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/sections_start (EArray(10,), shuffle, zlib(1)) 'array of start times of sections'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/segments_confidence (EArray(971,), shuffle, zlib(1)) 'array of confidence of segments'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/segments_loudness_max (EArray(971,), shuffle, zlib(1)) 'array of max loudness of segments'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/segments_loudness_max_time (EArray(971,), shuffle, zlib(1)) 'array of max loudness time of segments'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/segments_loudness_start (EArray(971,), shuffle, zlib(1)) 'array of loudness of segments at start time'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/segments_pitches (EArray(971, 12), shuffle, zlib(1)) 'array of pitches of segments (chromas)'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (85, 12)
+/analysis/segments_start (EArray(971,), shuffle, zlib(1)) 'array of start times of segments'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/segments_timbre (EArray(971, 12), shuffle, zlib(1)) 'array of timbre of segments (MFCC-like)'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (85, 12)
+/analysis/songs (Table(1,), shuffle, zlib(1)) 'table of Echo Nest analysis for one song'
+  description := {
+  "analysis_sample_rate": Int32Col(shape=(), dflt=0, pos=0),
+  "audio_md5": StringCol(itemsize=32, shape=(), dflt=b'', pos=1),
+  "danceability": Float64Col(shape=(), dflt=0.0, pos=2),
+  "duration": Float64Col(shape=(), dflt=0.0, pos=3),
+  "end_of_fade_in": Float64Col(shape=(), dflt=0.0, pos=4),
+  "energy": Float64Col(shape=(), dflt=0.0, pos=5),
+  "idx_bars_confidence": Int32Col(shape=(), dflt=0, pos=6),
+  "idx_bars_start": Int32Col(shape=(), dflt=0, pos=7),
+  "idx_beats_confidence": Int32Col(shape=(), dflt=0, pos=8),
+  "idx_beats_start": Int32Col(shape=(), dflt=0, pos=9),
+  "idx_sections_confidence": Int32Col(shape=(), dflt=0, pos=10),
+  "idx_sections_start": Int32Col(shape=(), dflt=0, pos=11),
+  "idx_segments_confidence": Int32Col(shape=(), dflt=0, pos=12),
+  "idx_segments_loudness_max": Int32Col(shape=(), dflt=0, pos=13),
+  "idx_segments_loudness_max_time": Int32Col(shape=(), dflt=0, pos=14),
+  "idx_segments_loudness_start": Int32Col(shape=(), dflt=0, pos=15),
+  "idx_segments_pitches": Int32Col(shape=(), dflt=0, pos=16),
+  "idx_segments_start": Int32Col(shape=(), dflt=0, pos=17),
+  "idx_segments_timbre": Int32Col(shape=(), dflt=0, pos=18),
+  "idx_tatums_confidence": Int32Col(shape=(), dflt=0, pos=19),
+  "idx_tatums_start": Int32Col(shape=(), dflt=0, pos=20),
+  "key": Int32Col(shape=(), dflt=0, pos=21),
+  "key_confidence": Float64Col(shape=(), dflt=0.0, pos=22),
+  "loudness": Float64Col(shape=(), dflt=0.0, pos=23),
+  "mode": Int32Col(shape=(), dflt=0, pos=24),
+  "mode_confidence": Float64Col(shape=(), dflt=0.0, pos=25),
+  "start_of_fade_out": Float64Col(shape=(), dflt=0.0, pos=26),
+  "tempo": Float64Col(shape=(), dflt=0.0, pos=27),
+  "time_signature": Int32Col(shape=(), dflt=0, pos=28),
+  "time_signature_confidence": Float64Col(shape=(), dflt=0.0, pos=29),
+  "track_id": StringCol(itemsize=32, shape=(), dflt=b'', pos=30)}
+  byteorder := 'little'
+  chunkshape := (37,)
+/analysis/tatums_confidence (EArray(688,), shuffle, zlib(1)) 'array of confidence of tatums'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/analysis/tatums_start (EArray(688,), shuffle, zlib(1)) 'array of start times of tatums'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/metadata (Group) 'metadata about the song'
+/metadata/artist_terms (EArray(37,), shuffle, zlib(1)) 'array of terms (Echo Nest tags) for an artist'
+  atom := StringAtom(itemsize=256, shape=(), dflt=b'')
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'irrelevant'
+  chunkshape := (32,)
+/metadata/artist_terms_freq (EArray(37,), shuffle, zlib(1)) 'array of term (Echo Nest tags) frequencies for an artist'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/metadata/artist_terms_weight (EArray(37,), shuffle, zlib(1)) 'array of term (Echo Nest tags) weights for an artist'
+  atom := Float64Atom(shape=(), dflt=0.0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (1024,)
+/metadata/similar_artists (EArray(100,), shuffle, zlib(1)) 'array of similar artists Echo Nest id'
+  atom := StringAtom(itemsize=20, shape=(), dflt=b'')
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'irrelevant'
+  chunkshape := (409,)
+/metadata/songs (Table(1,), shuffle, zlib(1)) 'table of metadata for one song'
+  description := {
+  "analyzer_version": StringCol(itemsize=32, shape=(), dflt=b'', pos=0),
+  "artist_7digitalid": Int32Col(shape=(), dflt=0, pos=1),
+  "artist_familiarity": Float64Col(shape=(), dflt=0.0, pos=2),
+  "artist_hotttnesss": Float64Col(shape=(), dflt=0.0, pos=3),
+  "artist_id": StringCol(itemsize=32, shape=(), dflt=b'', pos=4),
+  "artist_latitude": Float64Col(shape=(), dflt=0.0, pos=5),
+  "artist_location": StringCol(itemsize=1024, shape=(), dflt=b'', pos=6),
+  "artist_longitude": Float64Col(shape=(), dflt=0.0, pos=7),
+  "artist_mbid": StringCol(itemsize=40, shape=(), dflt=b'', pos=8),
+  "artist_name": StringCol(itemsize=1024, shape=(), dflt=b'', pos=9),
+  "artist_playmeid": Int32Col(shape=(), dflt=0, pos=10),
+  "genre": StringCol(itemsize=1024, shape=(), dflt=b'', pos=11),
+  "idx_artist_terms": Int32Col(shape=(), dflt=0, pos=12),
+  "idx_similar_artists": Int32Col(shape=(), dflt=0, pos=13),
+  "release": StringCol(itemsize=1024, shape=(), dflt=b'', pos=14),
+  "release_7digitalid": Int32Col(shape=(), dflt=0, pos=15),
+  "song_hotttnesss": Float64Col(shape=(), dflt=0.0, pos=16),
+  "song_id": StringCol(itemsize=32, shape=(), dflt=b'', pos=17),
+  "title": StringCol(itemsize=1024, shape=(), dflt=b'', pos=18),
+  "track_7digitalid": Int32Col(shape=(), dflt=0, pos=19)}
+  byteorder := 'little'
+  chunkshape := (3,)
+/musicbrainz (Group) 'data about the song coming from MusicBrainz'
+/musicbrainz/artist_mbtags (EArray(0,), shuffle, zlib(1)) 'array of tags from MusicBrainz for an artist'
+  atom := StringAtom(itemsize=256, shape=(), dflt=b'')
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'irrelevant'
+  chunkshape := (32,)
+/musicbrainz/artist_mbtags_count (EArray(0,), shuffle, zlib(1)) 'array of tag counts from MusicBrainz for an artist'
+  atom := Int32Atom(shape=(), dflt=0)
+  maindim := 0
+  flavor := 'numpy'
+  byteorder := 'little'
+  chunkshape := (2048,)
+/musicbrainz/songs (Table(1,), shuffle, zlib(1)) 'table of data coming from MusicBrainz'
+  description := {
+  "idx_artist_mbtags": Int32Col(shape=(), dflt=0, pos=0),
+  "year": Int32Col(shape=(), dflt=0, pos=1)}
+  byteorder := 'little'
+  chunkshape := (1024,)
